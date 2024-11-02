@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  localstack:
+    image: localstack/localstack
+    container_name: localstack
+    ports:
+      - "4566:4566" # LocalStack edge port
+      - "4571:4571" # Lambda service
+    environment:
+      - SERVICES=s3,lambda,dynamodb,sns,apigateway
+      - AWS_ACCESS_KEY_ID=test
+      - AWS_SECRET_ACCESS_KEY=test
+      - DEFAULT_REGION=us-west-2
+      - LAMBDA_EXECUTOR=docker
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
