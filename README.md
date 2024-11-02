@@ -1,7 +1,3 @@
-Here's an expanded README with instructions for running the infrastructure locally in a Docker container to test functionality. This setup will allow you to simulate the AWS environment as much as possible using tools like **LocalStack**, which emulates AWS services locally.
-
----
-
 # Cloudtopia Passport Office
 
 Imagine a bustling city named **Cloudtopia**, where people from all walks of life need to apply for and renew their passports quickly and efficiently. However, with long queues, extensive paperwork, and the traditional passport processing system, residents often experience delays, missed appointments, and lost documents. Enter the **Cloudtopia Passport Office**, a modern, cloud-native solution designed to revolutionize passport processing, making it fast, secure, and fully automated.
